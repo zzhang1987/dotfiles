@@ -1,0 +1,165 @@
+!-------------------------------------------------------------------------------
+! Xft settings
+!-------------------------------------------------------------------------------
+
+Xft.dpi:                    96
+Xft.antialias:              true
+Xft.rgba:                   rgba
+Xft.hinting:                true
+Xft.hintstyle:              hintslight
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+
+! URxvt.depth:                32
+URxvt.geometry:             90x30
+URxvt.transparent:          false
+URxvt.fading:               0
+! URxvt.urgentOnBell:         true
+! URxvt.visualBell:           true
+URxvt.loginShell:           true
+URxvt.saveLines:            15000
+URxvt.internalBorder:       3
+URxvt.lineSpace:            0
+
+URxvt.utf8: true
+URxvt.locale: true
+
+! Fonts
+URxvt.allow_bold:           true
+urxvt.font: xft:DejaVu Sans Mono for Powerline:size=14,xft:SimSun
+URxvt.boldfont: xft:Bitstream Vera Sans Mono:Bold:size=14:antialias=true
+
+! URxvt*font: xft: Meslo LG M for Powerline:pixelsize=14:antialias=true:hinting=true,xft:SimSun
+! URxvt*font: xft:Source Code Pro:pixelsize=14
+! URxvt*boldFont: xft:Source Code Pro Black:pixelsize=14
+
+! Fix font space
+! URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle:          rxvt
+URxvt.scrollBar:            false
+
+! Perl extensions
+URxvt.perl-ext-common:      default,matcher
+URxvt.matcher.button:       1
+URxvt.urlLauncher:          firefox
+
+! Cursor
+URxvt.cursorBlink:          true
+URxvt.cursorColor:          #657b83
+URxvt.cursorUnderline:      false
+
+! Pointer
+URxvt.pointerBlank:         true
+
+!!Source http://github.com/altercation/solarized
+URxvt.depth: 32
+! URxvt.background: rgba:0000//1111/dddd
+
+
+! Use the specified colour as the windows background colour [default White]; option -bg.
+!URxvt*background: [90]#272822
+URxvt*background: [90]#1D262A
+
+! Use the specified colour as the windows foreground colour [default Black]; option -fg.
+!URxvt*foreground: #f8f8f2
+URxvt*foreground: #E7EBED
+
+! Use the specified colour for the colour value n, where 0-7 corresponds to low-intensity (normal) colours and 8-15 corresponds to high-intensity (bold = bright foreground, blink = bright
+! URxvt*colorn: colour
+
+!
+URxvt*colorBD: #EAEAEA
+
+! Use the specified colour to display bold or italic characters when the foreground colour is the default. If font styles are not available (Compile styles) and this option is unset, reverse video
+URxvt*colorIT: #EAEAEA
+
+! Use the specified colour to display underlined characters when the foreground colour is the default.
+! URxvt*colorUL: colour
+
+! If set, use the specified colour as the colour for the underline itself. If unset, use the foreground colour.
+! URxvt*underlineColor: colour
+
+! If set, use the specified colour as the background for highlighted characters. If unset, use reverse video.
+URxvt*highlightColor: #4E6A78
+
+! If set and highlightColor is set, use the specified colour as the foreground for highlighted characters.
+URxvt*highlightTextColor: #E7EBED
+
+! Use the specified colour for the cursor. The default is to use the foreground colour; option -cr.
+! URxvt*cursorColor: colour
+
+! Use the specified colour for the colour of the cursor text. For this to take effect, cursorColor must also be specified. The default is to use the background colour.
+! URxvt*cursorColor2: colour
+
+! True: simulate reverse video by foreground and background colours; option -rv. False: regular screen colours [default]; option +rv. See note in COLOURS AND GRAPHICS section.
+! URxvt*reverseVideo: boolean
+
+! True: specify that jump scrolling should be used. When receiving lots of lines, urxvt will only scroll once a whole screen height of lines has been read, resulting in fewer updates while still
+! URxvt*jumpScroll: boolean
+
+! True: (the default) specify that skip scrolling should be used. When receiving lots of lines, urxvt will only scroll once in a while (around 60 times per second), resulting in far fewer updates.
+! URxvt*skipScroll: boolean
+
+! Fade the text by the given percentage when focus is lost; option -fade.
+! URxvt*fading: number
+
+! Fade to this colour, when fading is used (see fading:). The default colour is black; option -fadecolor.
+! URxvt*fadeColor: colour
+
+! Set the application icon pixmap; option -icon.
+! URxvt*iconFile: file
+
+! Use the specified colour for the scrollbar [default #B2B2B2].
+! URxvt*scrollColor: colour
+
+! Use the specified colour for the scrollbars trough area [default #969696]. Only relevant for rxvt (non XTerm/NeXT) scrollbar.
+! URxvt*troughColor: colour
+
+! The colour of the border around the text area and between the scrollbar and the text.
+! URxvt*borderColor: colour
+
+! Material design color scheme
+! black
+*color0: #435B67
+*color8: #A1B0B8
+! red
+*color1: #FC3841
+*color9: #FC746D
+! green
+*color2: #5CF19E
+*color10: #ADF7BE
+! yellow
+*color3: #FED032
+*color11: #FEE16C
+! blue
+*color4: #37B6FF
+*color12: #70CFFF
+! magenta
+*color5: #FC226E
+*color13: #FC669B
+! cyan
+*color6: #59FFD1
+*color14: #9AFFE6
+! white
+*color7: #FFFFFF
+*color15: #FFFFFF
+
+URxvt.perl-ext: default,url-select,tabbed,resize-font,clipboard
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
+
+URxvt*termName: rxvt-unicode-256color
+
+
+
+! Font settings
+Emacs.FontBackend: xft,x
+Emacs.font: Fira Code:size=14
