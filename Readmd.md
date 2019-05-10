@@ -36,4 +36,10 @@ else
 fi 
 ln -sv ~/.config/dotfiles/xmonad.hs ~/.xmonad/xmonad.hs
 
+if [ -f ~/.xmobarrc ]; then 
+    rm -rf ~/.xmobarrc
+fi 
+ln -sv ~/.config/dotfiles/xmobarrc ~/.xmobarrc
+
+
 ```
