@@ -10,7 +10,7 @@ aurman -S xmonad xmonad-contrib trayer albert fcitx blueberry
 
 ## Get the configuration files 
 ```shell
-git clone ... ~/.config/dotfiles/ 
+git clone https://github.com/zzhang1987/dotfiles ~/.config/dotfiles/ 
 ```
 
 ## Soft link the configuration files to the correct location

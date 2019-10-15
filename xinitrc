@@ -9,7 +9,12 @@ $DBS_L trayer --edge top --align right --expand true --width 10 --transparent tr
 feh --bg-scale ${HOME}/.wallpaper.jpg
 
 dbus-update-activation-environment --systemd DISPLAY
-eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+# eval $(/usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh)
+eval $(gnome-keyring-daemon --start)
+export GNOME_KEYRING_SOCKET
+export GNOME_KEYRING_PID
+
+
 export SSH_AUTH_SOCK
 
 # composite manager
@@ -52,6 +57,10 @@ fi
 
 if [ -d /usr/bin/xbindkeys ] ; then
     $DBS_L xbindkeys 
+fi
+
+if [ -d /usr/bin/ibus-daemon ] ; then
+    $DBS_L ibus-daemon
 fi 
 
 $DBS_L xmonad

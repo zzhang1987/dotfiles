@@ -92,38 +92,19 @@ URxvt*highlightColor: #4E6A78
 ! If set and highlightColor is set, use the specified colour as the foreground for highlighted characters.
 URxvt*highlightTextColor: #E7EBED
 
-! Use the specified colour for the cursor. The default is to use the foreground colour; option -cr.
-! URxvt*cursorColor: colour
 
-! Use the specified colour for the colour of the cursor text. For this to take effect, cursorColor must also be specified. The default is to use the background colour.
-! URxvt*cursorColor2: colour
+URxvt.perl-ext: default,url-select,tabbed,resize-font,clipboard
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.launcher: /usr/bin/xdg-open
+URxvt.url-select.underline: true
 
-! True: simulate reverse video by foreground and background colours; option -rv. False: regular screen colours [default]; option +rv. See note in COLOURS AND GRAPHICS section.
-! URxvt*reverseVideo: boolean
+URxvt*termName: rxvt-unicode-256color
 
-! True: specify that jump scrolling should be used. When receiving lots of lines, urxvt will only scroll once a whole screen height of lines has been read, resulting in fewer updates while still
-! URxvt*jumpScroll: boolean
 
-! True: (the default) specify that skip scrolling should be used. When receiving lots of lines, urxvt will only scroll once in a while (around 60 times per second), resulting in far fewer updates.
-! URxvt*skipScroll: boolean
 
-! Fade the text by the given percentage when focus is lost; option -fade.
-! URxvt*fading: number
-
-! Fade to this colour, when fading is used (see fading:). The default colour is black; option -fadecolor.
-! URxvt*fadeColor: colour
-
-! Set the application icon pixmap; option -icon.
-! URxvt*iconFile: file
-
-! Use the specified colour for the scrollbar [default #B2B2B2].
-! URxvt*scrollColor: colour
-
-! Use the specified colour for the scrollbars trough area [default #969696]. Only relevant for rxvt (non XTerm/NeXT) scrollbar.
-! URxvt*troughColor: colour
-
-! The colour of the border around the text area and between the scrollbar and the text.
-! URxvt*borderColor: colour
+! Font settings
+! Emacs.FontBackend: xft,x
+! Emacs.font: Fira Code:size=14
 
 ! Material design color scheme
 ! black
@@ -151,15 +132,44 @@ URxvt*highlightTextColor: #E7EBED
 *color7: #FFFFFF
 *color15: #FFFFFF
 
-URxvt.perl-ext: default,url-select,tabbed,resize-font,clipboard
-URxvt.keysym.M-u: perl:url-select:select_next
-URxvt.url-select.launcher: /usr/bin/xdg-open
-URxvt.url-select.underline: true
 
-URxvt*termName: rxvt-unicode-256color
+! Material design color scheme
+! black
+xterm*color0: #435B67
+xterm*color8: #A1B0B8
+! red
+xterm*color1: #FC3841
+xterm*color9: #FC746D
+! green
+xterm*color2: #5CF19E
+xterm*color10: #ADF7BE
+! yellow
+xterm*color3: #FED032
+xterm*color11: #FEE16C
+! blue
+xterm*color4: #37B6FF
+xterm*color12: #70CFFF
+! magenta
+xterm*color5: #FC226E
+xterm*color13: #FC669B
+! cyan
+xterm*color6: #59FFD1
+xterm*color14: #9AFFE6
+! white
+xterm*color7: #FFFFFF
+xterm*color15: #FFFFFF
 
+! Colours for xterm
+xterm*background: #1D262A
+xterm*foreground: #E7EBED
+xterm*cursorColor: #657b83
+XTerm*cursorBlink: true
 
-
-! Font settings
-Emacs.FontBackend: xft,x
-Emacs.font: Fira Code:size=14
+XTerm.vt100.locale: true
+XTerm.vt100.faceName: DejaVu Sans Mono for Powerline:style:size=12:antialias=true
+XTerm.vt100.font: 7x13
+XTerm.vt100.scrollBar: true
+XTerm.vt100.scrollbar.width: 8
+XTerm*termName: xterm-256color
+XTerm*metaSendsEscape: true
+XTerm*selectToClipboard: true
